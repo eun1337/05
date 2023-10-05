@@ -9,10 +9,11 @@ int main(int argc, char *argv[]) {
 	scanf("%d", &n);
 
 	if(n == 0)
-    	printf("0 입니다.");
+    	printf("절대값은 0입니다.\n");
 	else if(n > 0)
-    	printf("양수입니다.");
-	else printf("음수입니다.");
+    	printf("절대값은 %d입니다.\n", n);
+	else printf("절대값은 %d입니다.\n", -n);
 	
+	system("PAUSE");
 	return 0;
 }
