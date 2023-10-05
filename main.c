@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
 		if(c >= '0' && c <= '9') count++;
 	}
 	
-	printf("%d\n", count);
+	printf("the number of digits is %d\n", count);
 	
 	system("PAUSE");
 	return 0;
