@@ -5,15 +5,29 @@
 
 int main(int argc, char *argv[]) {
 	
-	int i, num, sum=0;
+	int num1, num2;
+	char op;
 	
-	printf("input a number : ");
-	scanf("%d", &num);
+	printf("enter the calculation : ");
+	scanf("%d %c %d", &num1, &op, &num2);
 	
-	for(i = 1; i <= num; i++) {
-		sum+= i;
+	switch(op) {
+		case '+':
+			printf("%d\n", num1+num2);
+			break;
+			
+		case '-':
+			printf("%d\n", num1-num2);
+			break;
+			
+		case '*':
+			printf("%d\n", num1*num2);
+			break;
+			
+		case '/':
+			printf("%d\n", num1/num2);
+			break;
 	}
-	printf("The result is %d\n", sum);
 	
 	system("PAUSE");
 	return 0;
